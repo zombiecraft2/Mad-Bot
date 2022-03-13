@@ -1,15 +1,6 @@
 import DiscordJS, { Intents, MessageEmbed } from "discord.js";
 import dotenv from "dotenv";
 
-var Partenaires = [
-  "Partenaire1",
-  "Partenaire2",
-  "Partenaire3"
-]
-var IsAddingADescription = false;
-var IsAddingDescriptionChannel = null;
-var IsAddingDescriptionClient = null;
-
 dotenv.config();
 
 const client = new DiscordJS.Client({
@@ -26,15 +17,10 @@ client.on("messageCreate", (message) => {
   var args = message.content.split(" ");
 
   if (args[0]) {
-    if (args[0] == "Mb!serveurs") {
-      message.reply({
-        embeds: [
-          {
-            title: 'Voici nos partenaires !',
-            color: "GREEN",
-          },
-        ],
-    });
+    if (args[0] == "Mb!images") {
+      if (args[1] == "dance") {
+        
+      }
     }
   }
 });
