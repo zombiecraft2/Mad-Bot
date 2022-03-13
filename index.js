@@ -1,6 +1,11 @@
 import DiscordJS, { Intents, MessageEmbed } from "discord.js";
 import dotenv from "dotenv";
 
+var Partenaires = [
+  "Partenaire1",
+  "Partenaire2",
+  "Partenaire3"
+]
 var IsAddingADescription = false;
 var IsAddingDescriptionChannel = null;
 var IsAddingDescriptionClient = null;
@@ -44,7 +49,6 @@ client.on("messageCreate", (message) => {
           {
             title: 'Voici nos partenaires !',
             color: "GREEN",
-            
           },
         ],
       });
